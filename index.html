@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Java Script CRUD Local Storage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                    <label>Full Name</label>
+                    <label class="validation-error hide" id="fullNameValidationError">This field is required</label>
+                    <input type="text" name="fullName" id="fullName">
+                    </div>
+
+                    <div>
+                        <label>ID Code</label>
+                        <input type="text" name="idCode" id="idCode">
+                        </div>
+
+                        <div>
+                            <label>Salary</label>
+                            <input type="text" name="salary" id="salary">
+                            </div>
+
+                            <div>
+                                <label>City</label>
+                                <input type="text" name="city" id="city">
+                            </div>
+                            <div class="form-action-buttons">
+                                <input type="submit" value="submit">
+                            </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>ID Code</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+            </td>
+        </tr>
+        
+    </table>
+</body>
+<script src="script.js"></script>
+</html>
