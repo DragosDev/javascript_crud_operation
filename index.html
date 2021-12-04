@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
     <table>
         <tr>
             <td>
@@ -14,17 +15,14 @@
                     <label class="validation-error hide" id="fullNameValidationError">This field is required</label>
                     <input type="text" name="fullName" id="fullName">
                     </div>
-
                     <div>
                         <label>ID Code</label>
                         <input type="text" name="idCode" id="idCode">
                         </div>
-
                         <div>
                             <label>Salary</label>
                             <input type="text" name="salary" id="salary">
                             </div>
-
                             <div>
                                 <label>City</label>
                                 <input type="text" name="city" id="city">
@@ -33,26 +31,25 @@
                                 <input type="submit" value="submit">
                             </div>
                 </form>
-            </td>
-            <td>
-                <table class="list" id="employeeList">
-                    <thead>
-                        <tr>
-                            <th>Full Name</th>
-                            <th>ID Code</th>
-                            <th>Salary</th>
-                            <th>City</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-
-                    </tbody>
-                </table>
-
-            </td>
-        </tr>
-        
+            </td>       
     </table>
+</div>
+
+<div class="container-table2">
+    <table class="list" id="employeeList">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>ID Code</th>
+                <th>Salary</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
 </body>
 <script src="script.js"></script>
 </html>

@@ -1,5 +1,4 @@
 var selectedRow = null
-
 function onFormSubmit() {
     if(validate()) {
        var formData = readFormData();
@@ -22,20 +21,20 @@ function readFormData() {
 function insertNewRecord(data) {
     var table = document.getElementById("employeeList").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow(table.length);
-    cell1 = newRow.insertCell(0);
-    cell1.innerHTML = data.fullName;
+    cell0 = newRow.insertCell(0);
+    cell0.innerHTML = data.fullName;
 
-    cell2 = newRow.insertCell(1);
-    cell2.innerHTML = data.empCode;
+    cell1 = newRow.insertCell(1);
+    cell1.innerHTML = data.empCode;
 
-    cell3 = newRow.insertCell(2);
-    cell3.innerHTML = data.salary;
+    cell2 = newRow.insertCell(2);
+    cell2.innerHTML = data.salary;
 
-    cell4 = newRow.insertCell(3);
-    cell4.innerHTML = data.city;
+    cell3 = newRow.insertCell(3);
+    cell3.innerHTML = data.city;
 
-    cell5 = newRow.insertCell(4);
-    cell5.innerHTML = `<a onClick="onEdit(this)">Edit</a>
+    cell4 = newRow.insertCell(4);
+    cell4.innerHTML = `<a onClick="onEdit(this)">Edit</a>
                       
                        <a onClick="onDelete(this)">Delete</a>`;
 }
